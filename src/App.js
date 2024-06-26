@@ -14,6 +14,7 @@ const App = () => {
     <div className='App'>
       <Routes>
         <Route path='/home' element={<Home setFriendsProfile={setFriendsProfile}/> } />
+        <Route path='/explore' element={<Profile /> } />
         
         <Route path='/profile' element={ <Profile /> } />
 

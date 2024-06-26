@@ -28,12 +28,13 @@ const Left = ({profileImg,
           <span>Home</span>
         </div>
       </Link>
-    
+      <Link to="/explore" style={{textDecoration:"none",color:"black"}}>
       <div id='L-box' onClick={()=>setBtnActive("#explore")} className={btnActive === "#explore" ? "active" : ""}>
         <AiOutlineSearch
           className='margin'/>
          <span>Explore</span>
       </div>
+      </Link>
           
       <div id='L-box'  onClick={()=>setBtnActive("#trending")} className={btnActive === "#trending" ? "active" : ""}>
        <h1 className='notifi'>
