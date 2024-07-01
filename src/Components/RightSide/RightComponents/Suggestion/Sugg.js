@@ -15,8 +15,8 @@ const Sugg = () => {
         </div>
 
         <div className="s-right">
-          <button>Follow</button>
-          <button>Dismiss</button>
+          <button>Подписаться</button>
+          <button>Отписаться</button>
         </div>
       </div>
 
@@ -27,8 +27,8 @@ const Sugg = () => {
         </div>
 
         <div className="s-right">
-          <button>Follow</button>
-          <button>Dismiss</button>
+          <button>Подписаться</button>
+          <button>Отписаться</button>
         </div>
       </div>
 

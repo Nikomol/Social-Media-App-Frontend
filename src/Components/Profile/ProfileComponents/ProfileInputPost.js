@@ -24,7 +24,7 @@ const ProfileInputPost = ({handleSubmit,
                 <input 
                 type="text" 
                 id="i-input" 
-                placeholder={`What's in your mind ${modelDetails.ModelName}?`}
+                placeholder={`Чем ты хочешь поделится, ${modelDetails.ModelName}?`}
                 required
                 value={body}
                 onChange={(e)=>setBody(e.target.value)}
@@ -34,27 +34,27 @@ const ProfileInputPost = ({handleSubmit,
      <div className="file-upload">
       <div className="file-icons">
           <label htmlFor='file' className="pv-upload">
-            <PhotoLibraryIcon className="input-svg" style={{fontSize:"38px",color:"orangered"}}/>
-            <span className='photo-dis'>Photo</span>
+            <PhotoLibraryIcon className="input-svg" style={{fontSize:"38px",color:"#ff9800"}}/>
+            <span className='photo-dis'>Фото</span>
           </label>
 
           <div className="pv-upload">
             <PlayCircleFilledOutlinedIcon className="input-svg" style={{fontSize:"38px",color:"black"}}/>
-            <span className='photo-dis'>Video</span>
+            <span className='photo-dis'>Видео</span>
           </div>
 
           <div className="pv-upload">
             <KeyboardVoiceRoundedIcon className="input-svg" style={{fontSize:"38px",color:"green"}}/>
-            <span className='photo-dis'>Audio</span>
+            <span className='photo-dis'>Аудио</span>
           </div>
 
           <div className="pv-upload">
             <FaSmile className="input-svg" style={{fontSize:"30px",color:"red"}}/>
-            <span className='photo-dis'>Location</span>
+            <span className='photo-dis'>Активность</span>
           </div>
       </div>
       
-          <button type='submit'>Share</button>
+          <button type='submit'>Поделится</button>
             
       </div>
 

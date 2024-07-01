@@ -1,15 +1,22 @@
-.noti-overall{
+.noti-overall {
     padding: 0px 10px;
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
 }
-.notification-group{
+
+.notification-group {
     max-width: 850px;
     display: flex;
     flex-direction: column;
-    margin:20px auto;
+    margin: 20px auto;
     padding: 5px 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.noti-div{
-    background-color: black;
+
+.noti-div {
+    background-color: #ff9800;
     width: 55px;
     height: 55px;
     display: flex;
@@ -19,103 +26,129 @@
     cursor: pointer;
     margin: 10px 0px 0px 10px;
     color: #fff;
-    border: 2px solid black
+    border: 2px solid #ff9800;
+    transition: background-color 0.3s, color 0.3s;
 }
-small{
+
+.noti-div:hover {
+    background-color: #e68900;
+    color: #fff;
+}
+
+small {
     color: grey;
 }
-.noti-Home-Icon{
+
+.noti-Home-Icon {
     font-size: 30px;
 }
-.noti-div:hover{
-    background-color: #dedede;
-    color: black;
-    transition: .3s;
-}
-.nav-section{
+
+.nav-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nav-section img{
+
+.nav-section img {
     width: 55px;
     height: 55px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
     margin: 20px 20px 0px 0px;
+    border: 2px solid #ff9800;
 }
-.notification-group h1{
+
+.notification-group h1 {
     font-size: 30px;
     font-weight: 600;
     text-transform: capitalize;
+    color: #ff9800;
+    margin-bottom: 10px;
+    text-align: center;
 }
-.notification-section{
+
+.notification-section {
     width: 100%;
     margin-top: 10px;
-    background-color: #dedede;
-    padding: 20px 0px 0px 20px;
+    background-color: #fff3e0;
+    padding: 20px;
     border-radius: 10px;
 }
-.notification-msg{
+
+.notification-msg {
     display: flex;
     gap: 10px;
     align-items: center;
     margin-bottom: 25px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
 }
-.notification-msg img{
+
+.notification-msg:hover {
+    background-color: #ffe0b2;
+}
+
+.notification-msg img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
     cursor: pointer;
+    border: 2px solid #ff9800;
 }
-.notification-msg p{
+
+.notification-msg p {
     font-size: 17px;
+    margin: 0;
+    color: #333;
 }
-.notification-msg span{
-    color: blue;
+
+.notification-msg span {
+    color: #ff9800;
     font-size: 18px;
     text-transform: lowercase;
     cursor: pointer;
 }
-@media screen and (max-width:430px){
-    .noti-overall{
+
+@media screen and (max-width: 430px) {
+    .noti-overall {
         padding: 0;
     }
-    .notification-group h1{
+    .notification-group h1 {
         font-size: 24px;
     }
-    .noti-div{
-        background-color: black;
+    .noti-div {
+        background-color: #ff9800;
         width: 45px;
         height: 45px;
         margin: 5px 0px 0px 10px;
     }
-    .notification-section{
+    .notification-section {
         background-color: #ffffff;
         padding: 20px 0px 0px 0px;
     }
-    .noti-Home-Icon{
+    .noti-Home-Icon {
         font-size: 25px;
     }
-    .nav-section img{
+    .nav-section img {
         width: 45px;
         height: 45px;
         margin: 10px 10px 0px 0px;
     }
-    .notification-msg img{
+    .notification-msg img {
         width: 40px;
         height: 40px;
     }
-    .notification-msg p{
+    .notification-msg p {
         font-size: 14px;
     }
-    .notification-msg span{
+    .notification-msg span {
         font-size: 15px;
     }
-    small{
-
+    small {
+        font-size: 12px;
     }
 }

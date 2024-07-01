@@ -29,7 +29,7 @@ const InfoFriendPost = ({val}) => {
             id:1,
             profilePic:img1,
             likes:23,
-            username:"Violet",
+            username:"Виолетта",
             time:"3 Hours Ago",
             comment:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse asperiores debitis saepe itaque, eligendi quasi laboriosam vitae voluptatem animi maiores voluptatibus."
         },
@@ -37,7 +37,7 @@ const InfoFriendPost = ({val}) => {
             id:2,
             profilePic:img2,
             likes:5,
-            username:"Brandon",
+            username:"Виталий",
             time:"1 Hour Ago",
             comment:"Lorem ipsum dolor sit amet consectetur adipisicing elit."
         },
@@ -45,7 +45,7 @@ const InfoFriendPost = ({val}) => {
             id:3,
             profilePic:img3,
             likes:50,
-            username:"Lilly",
+            username:"Лиллия",
             time:"30 Mins Ago",
             comment:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse asperiores debitis saepe itaque, eligendi quasi"
         }
@@ -75,7 +75,7 @@ const InfoFriendPost = ({val}) => {
 
     const id=comments.length ? comments[comments.length -1].id +1 : 1
     const profilePic =Profile
-    const username="Vijay"
+    const username="Дмитрий"
     const comment =commentInput
     const time= moment.utc(new Date(), 'yyyy/MM/dd kk:mm:ss').local().startOf('seconds').fromNow()
 
@@ -175,8 +175,8 @@ const InfoFriendPost = ({val}) => {
       
 
       <div className="like-comment-details">
-        <span className='post-like'>{like} people like it,</span>
-        <span className='post-comment'>{comments.length} comments</span>
+        <span className='post-like'>{like} человек понравилось это,</span>
+        <span className='post-comment'>{comments.length} комментария</span>
       </div>
       
      {showComment && (<div className="commentSection">

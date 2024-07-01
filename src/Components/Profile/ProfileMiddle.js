@@ -28,7 +28,7 @@ const ProfileMiddle = ({following,
     [
       {
         id:1,
-        username:"Vijay",
+        username:"Дмитрий",
         profilepicture:Profile,
         img:img1,
         datetime:moment("20230401", "YYYYMMDD").fromNow(),
@@ -38,7 +38,7 @@ const ProfileMiddle = ({following,
     },
     {
         id:2,
-        username:"Vijay",
+        username:"Дмитрий",
         profilepicture:Profile,
         img:img2,
         datetime:moment("20230525", "YYYYMMDD").fromNow(),
@@ -48,7 +48,7 @@ const ProfileMiddle = ({following,
     },
     {
         id:3,
-        username:"Vijay",
+        username:"Дмитрий",
         profilepicture:Profile,
         img:img3,
         datetime:moment.utc("2023-08-13 12:45:00").local().startOf('seconds').fromNow(),
@@ -68,7 +68,7 @@ const ProfileMiddle = ({following,
 
   
     const id =userPostData.length ? userPostData[userPostData.length -1].id +1 :1
-    const username="Vijay"
+    const username="Дмитрий"
     const profilepicture=Profile
     const datetime=moment.utc(new Date(), 'yyyy/MM/dd kk:mm:ss').local().startOf('seconds').fromNow()
     const img= images ? {img:URL.createObjectURL(images)} : null

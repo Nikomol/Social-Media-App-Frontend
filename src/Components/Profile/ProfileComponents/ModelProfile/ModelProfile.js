@@ -17,7 +17,7 @@ function ModelProfile({openEdit,setOpenEdit,handleModel,
         zIndex="1001"
         size="lg"
         opened={openEdit}
-        title="Edit Info"
+        title="Изменить информацию"
         onClose={()=>setOpenEdit(false)}
         overlayProps={{
           color: theme.colorScheme === 'dark' ? theme.colors.dark[9] : theme.colors.gray[10],
@@ -27,7 +27,7 @@ function ModelProfile({openEdit,setOpenEdit,handleModel,
         <form className='modelForm' onSubmit={handleModel}>
         <div className="row1">
           <div className="inputBox1">
-            <input type="text" name="name" id="name" placeholder='Enter Name'
+            <input type="text" name="name" id="name" placeholder='Введите имя'
                   onChange={(e)=>setName(e.target.value)}
                   value={name} 
                   required/>
@@ -35,7 +35,7 @@ function ModelProfile({openEdit,setOpenEdit,handleModel,
           </div>
 
           <div className="inputBox1">
-            <input type="text" name="username" id="name" placeholder='Enter User Name'
+            <input type="text" name="username" id="name" placeholder='Введите никнейм'
                     onChange={(e)=>setUserName(e.target.value)}
                     value={userName}
                     required/>
@@ -43,14 +43,14 @@ function ModelProfile({openEdit,setOpenEdit,handleModel,
         </div>
 
           <div className="inputBox1">
-            <input type="text" name="countryname" id="name" placeholder='Enter Country'
+            <input type="text" name="countryname" id="name" placeholder='Введите страну'
                     onChange={(e)=>setCountryName(e.target.value)}
                     value={countryName}
                     required/>
           </div>
 
           <div className="inputBox1">
-            <input type="text" name="jobname" id="name" placeholder='Enter Job'
+            <input type="text" name="jobname" id="name" placeholder='Введите работу'
                    onChange={(e)=>setJobName(e.target.value)}
                    value={jobName}
                    required/>
@@ -58,7 +58,7 @@ function ModelProfile({openEdit,setOpenEdit,handleModel,
 
           
 
-          <button className='modelBtn'>Update</button>
+          <button className='modelBtn'>Обновить</button>
         </form>
       </Modal>
     </>

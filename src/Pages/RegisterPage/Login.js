@@ -65,8 +65,8 @@ const Login = () => {
     <div className="container">
         <div className="container-form">
             <form onSubmit={handleSignUp}>
-                <h1>Login</h1>
-                <p>Please sign in to continue.</p>
+                <h1>Войти</h1>
+                <p>Войдите чтобы продолжить.</p>
                 <div className="inputBox">
                     <FiMail className='mail'/>
                     <input type="email" 
@@ -89,14 +89,14 @@ const Login = () => {
                
 
                 <div className='divBtn'>
-                    <small className='FG'>Forgot Password?</small>
-                    <button type='submit' className='loginBtn'>LOGIN</button>
+                    <small className='FG'>Забыли пароль?</small>
+                    <button type='submit' className='loginBtn'>Вход</button>
                 </div>
                 
             </form>
 
             <div className='dont'>
-                <p>Don't have an account? <Link to="/signup"><span>Sign up</span></Link></p>
+                <p>Не имеете аккаунта? <Link to="/signup"><span>Регистрация</span></Link></p>
             </div>
         </div>
     </div>

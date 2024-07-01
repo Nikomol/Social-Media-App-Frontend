@@ -9,6 +9,8 @@ import {RiFileListLine} from "react-icons/ri"
 import {FiSettings} from "react-icons/fi"
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 
+
+import {IoNotificationsOutline} from "react-icons/io5"
 import Profile from "../../assets/profile.jpg"
 
 
@@ -25,18 +27,18 @@ const Left = ({profileImg,
       <Link to="/home" style={{textDecoration:"none",color:"black"}}>
         <div onClick={()=>setBtnActive("#")} id='L-box' className={btnActive === "#" ? "active" : ""} >
           <AiOutlineHome className='margin'/>
-          <span>Home</span>
+          <span>Стена</span>
         </div>
       </Link>
       <Link to="/explore" style={{textDecoration:"none",color:"black"}}>
       <div id='L-box' onClick={()=>setBtnActive("#explore")} className={btnActive === "#explore" ? "active" : ""}>
         <AiOutlineSearch
           className='margin'/>
-         <span>Explore</span>
+         <span>Профиль</span>
       </div>
       </Link>
           
-      <div id='L-box'  onClick={()=>setBtnActive("#trending")} className={btnActive === "#trending" ? "active" : ""}>
+      {/* <div id='L-box'  onClick={()=>setBtnActive("#trending")} className={btnActive === "#trending" ? "active" : ""}>
        <h1 className='notifi'>
           <FiTrendingUp 
            className='margin'/>
@@ -54,21 +56,32 @@ const Left = ({profileImg,
         <BsBookmark
          className='margin'/>
         <span>Saved</span>
-      </div>
+      </div> */}
 
       <div id='L-box' onClick={()=>setBtnActive("#settings")} className={btnActive === "#settings" ? "active" : ""}>
         <FiSettings 
         className='margin'/>
-        <span>Settings</span>
+        <span>Настройки</span>
       </div>
+
+      <Link to="/notification"style={{textDecoration:"none",color:"black"}}>
+      <div id='L-box' onClick={()=>setBtnActive("#notification")} className={btnActive === "#notification" ? "active" : ""}>
+        
+        <IoNotificationsOutline className='margin'/>
+        <span>Уведомления</span>
+      </div>
+      </Link>
+
+      
+      
 
       <div className="left-user">
         <Link to="/profile" style={{textDecoration:"none",color:"black"}}>
           <div className="user-name-userid">
             <img src={profileImg ? (profileImg) : Profile} alt="" />
               <div className='L-user'>
-                <h1>{modelDetails ? (modelDetails.ModelName) : "Vijay"}</h1>
-                <span>{modelDetails ? (modelDetails.ModelUserName) : "@vijay98"}</span>
+                <h1>{modelDetails ? (modelDetails.ModelName) : "Дмитрий"}</h1>
+                <span>{modelDetails ? (modelDetails.ModelUserName) : "@Lomakin98"}</span>
             </div>
           </div>
         </Link>
@@ -76,8 +89,8 @@ const Left = ({profileImg,
           
           {logOutExit && (
             <div className="logOutExitContainer">
-              <button>Add an existing account</button>
-              <Link to="/" style={{width:"100%"}}><button>Log out @vijay98</button></Link>
+              <button>Добавить дополнительный аккаунт</button>
+              <Link to="/" style={{width:"100%"}}><button>Выйти из @Lomakin98</button></Link>
             </div>
           )}
       </div>

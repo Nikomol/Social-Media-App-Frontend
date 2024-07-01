@@ -51,7 +51,7 @@
     cursor: pointer;
 }
 .s-right button:hover{
-    border: 2px solid orangered;
+    border: 2px solid #ff9800;
     background-color: transparent;
 }
 

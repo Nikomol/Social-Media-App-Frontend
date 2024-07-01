@@ -13,7 +13,7 @@ const FollowingU = ({following,setFollowing}) => {
 
   return (
     <div className="following-comp">
-      <h2>Who is following you</h2>
+      <h2>Кто подписан на тебя</h2>
       {FollowimgData.map((data,id)=>(
 
         <FollowingUList 
@@ -29,7 +29,7 @@ const FollowingU = ({following,setFollowing}) => {
         setShowMore={setShowMore}
         />
       
-      <button className='SM-btn' onClick={()=>setShowMore(true)}>Show more</button>
+      <button className='SM-btn' onClick={()=>setShowMore(true)}>Показать еще</button>
     </div>
     
   )

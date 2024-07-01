@@ -7,7 +7,7 @@ import OnlineList from './OnlineList'
 const Online = () => {
   return (
     <div className="online-comp">
-      <h2>Online Friends</h2>
+      <h2>Друзья онлайн</h2>
 
       {DisPlayPostData.map((value,id)=>(
               <OnlineList 

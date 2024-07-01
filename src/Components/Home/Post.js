@@ -41,25 +41,25 @@ const Post = ({post,posts,setPosts,setFriendsProfile,images}) => {
         id:1,
         profilePic:img1,
         likes:23,
-        username:"Violet",
-        time:"3 Hours Ago",
-        comment:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse asperiores debitis saepe itaque, eligendi quasi laboriosam vitae voluptatem animi maiores voluptatibus."
+        username:"Виолетта",
+        time:"3 Часа назад",
+        comment:"Классный пост продолжай в том же духе!!"
     },
     {
         id:2,
         profilePic:img2,
         likes:5,
-        username:"Brandon",
-        time:"1 Hour Ago",
-        comment:"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        username:"Виталий",
+        time:"1 Час назад",
+        comment:"Крутой пост!! Я подписался!!"
     },
     {
         id:3,
         profilePic:img3,
         likes:50,
-        username:"Lilly",
-        time:"30 Mins Ago",
-        comment:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse asperiores debitis saepe itaque, eligendi quasi"
+        username:"Лилия",
+        time:"30 Минут назад",
+        comment:"Так держать! Вперед!"
     }
 ])
 
@@ -96,7 +96,7 @@ const handleDelete=(id)=>{
 
     const id=comments.length ? comments[comments.length -1].id +1 : 1
     const profilePic =Profile
-    const username="Vijay"
+    const username="Дмитрий"
     const comment =commentInput
     const time= moment.utc(new Date(), 'yyyy/MM/dd kk:mm:ss').local().startOf('seconds').fromNow()
 
@@ -136,11 +136,11 @@ const handleDelete=(id)=>{
          
          <div className='delete'>
          {showDelete && (<div className="options">
-            <button><PiSmileySad />Not Interested in this post</button>
-            <button><IoVolumeMuteOutline />Mute this user</button>
-            <button><MdBlockFlipped />Block this user</button>
-            <button onClick={()=>handleDelete(post.id)}><AiOutlineDelete />Delete</button>
-            <button><MdReportGmailerrorred />Report post</button>
+            <button><PiSmileySad />Не интересен этот пост</button>
+            <button><IoVolumeMuteOutline />Выключить звук</button>
+            <button><MdBlockFlipped />Заблокировать пользователя</button>
+            <button onClick={()=>handleDelete(post.id)}><AiOutlineDelete />Удалить</button>
+            <button><MdReportGmailerrorred />Пожаловаться</button>
          </div>
         
          )}
@@ -221,8 +221,8 @@ const handleDelete=(id)=>{
         
 
         <div className="like-comment-details">
-          <span className='post-like'>{like} people like it,</span>
-          <span className='post-comment'>{comments.length} comments</span>
+          <span className='post-like'>{like} человек понравилось это,</span>
+          <span className='post-comment'>{comments.length} комментария</span>
         </div>
         
        {showComment && (<div className="commentSection">

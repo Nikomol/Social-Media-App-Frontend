@@ -107,10 +107,10 @@ const Info = ({userPostData,
             <p>{modelDetails.ModelUserName}</p>
 
             <Link to="/" className='logout'>
-              <BiLogOut />Logout
+              <BiLogOut />Выйти из аккаунта
             </Link>
 
-            <button onClick={()=>setOpenEdit(true)}><LiaEdit />Edit Profile</button>
+            <button onClick={()=>setOpenEdit(true)}><LiaEdit />Изменить профиль</button>
             <ModelProfile 
             name={name}
             setName={setName}
@@ -140,22 +140,22 @@ const Info = ({userPostData,
 
               <div className="info-details-list">
                 <CalendarMonthRoundedIcon />
-                <span>Joined in 2023-08-12</span>
+                <span>Присоединился 2023-08-12</span>
               </div>
             </div>
 
             <div className="info-col-2">
               <div>
                 <h2>5,000</h2>
-                <span>Followers</span>
+                <span>Подписчиков</span>
               </div>
               <div>
                 <h2>{userPostData.length}</h2>
-                <span>Posts</span>
+                <span>Постов</span>
               </div>
               <div>
                 <h2>{following}</h2>
-                <span>Following</span>
+                <span>Подписок</span>
               </div>
             </div>
 

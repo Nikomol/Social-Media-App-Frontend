@@ -5,7 +5,7 @@ const FollowingUList = ({data,following,setFollowing}) => {
   const [booleonFollowing,setBooleonFollowing] =useState(false)
 
 
-  const [followFollowed,setFollowFollowed] = useState("Follow")
+  const [followFollowed,setFollowFollowed] = useState("Подписаться")
   const [boolfollowFollowed,setBoolFollowFollowed] = useState(false)
 
   const [clicked,setUnClicked] = useState(false)
@@ -15,7 +15,7 @@ const FollowingUList = ({data,following,setFollowing}) => {
     setFollowing(booleonFollowing ? following -1 : following +1)
     setBooleonFollowing(! booleonFollowing)
 
-    setFollowFollowed(boolfollowFollowed ? "Follow" : "Following")
+    setFollowFollowed(boolfollowFollowed ? "Подписаться" : "Подписан")
     setBoolFollowFollowed(! boolfollowFollowed)
 
     setUnClicked(! clicked)
@@ -35,7 +35,7 @@ const FollowingUList = ({data,following,setFollowing}) => {
           <button
           style={{background: clicked ? "transparent" : "linear-gradient(107deg, rgb(255, 67, 5) 11.1%, rgb(245, 135, 0) 95.3%)",
                   color:clicked ? "black" : "white",
-                  border:clicked ? "2px solid orangered" : "none"
+                  border:clicked ? "2px solid #ff9800" : "none"
                 }}
           onClick={handleFollow}
            >

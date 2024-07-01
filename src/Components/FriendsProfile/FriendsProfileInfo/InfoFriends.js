@@ -42,15 +42,15 @@ const InfoFriends = ({val}) => {
             <div className="info-col-2">
               <div>
                 <h2>{val.followers}</h2>
-                <span>Followers</span>
+                <span>Подписчики</span>
               </div>
               <div>
                 <h2>1</h2>
-                <span>Posts</span>
+                <span>Посты</span>
               </div>
               <div>
                 <h2>10</h2>
-                <span>Following</span>
+                <span>Подписки</span>
               </div>
             </div>
 

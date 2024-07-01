@@ -12,10 +12,7 @@ const Right = ({following,setFollowing,showMenu,setShowMenu}) => {
       <GrFormClose 
       className='closeBurger'
       onClick={()=>setShowMenu(false)}/>
-      <Sugg 
-      following={following}
-      setFollowing={setFollowing}
-      />
+      
 
       <Online />
 

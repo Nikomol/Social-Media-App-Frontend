@@ -14,60 +14,59 @@ import DPimg5 from "../assets/DP/img5.jpg"
 import DPimg6 from "../assets/DP/img6.jpg"
 
 
-export const DisPlayPostData =[
-    {
-      username:"Harry",
-      profilepicture:DPimg1,
-      img:img1,
-      datetime:"April 01, 2023 12:05 AM",
-      body:"My 1st Post, Have A Good Day",
-      like: 44,
-      comment:10
-    },
-    {
-      username:"chris dhaniel",
-      profilepicture:DPimg2,
-      img:img2,
-      datetime:"May 01, 2023 12:05 AM",
-      body:"My 2st Post, Have A Bad Day",
-      like: 84,
-      comment:50
-    },
-    {
-      username:"April",
-      profilepicture:DPimg3,
-      img:img3,
-      datetime:"June 01, 2023 12:05 AM",
-      body:"My 3st Post, Have A Nice Day",
-      like: 340,
-      comment:76
-    },
-    {
-      username:"Lara",
-      profilepicture:DPimg4,
-      img:img4,
-      datetime:"July 01, 2023 12:05 AM",
-      body:"My 4st Post, Have A Dull DayLorem ipsum dolor sit amet consectetur adipisicing elit. Iure veritatis numquam, ex explicabo tempore eum autem. Distinctio, odit fugiat rerum animi mollitia placeat? At ipsam debitis animi rem suscipit dicta dolor eveniet impedit minus. Quidem odit autem quia facere consectetur vero placeat delectus enim aspernatur",
-      like: 44,
-      comment:10
-    },
-    {
-
-      username:"Kenny",
-      profilepicture:DPimg5,
-      img:img5,
-      datetime:"February 01, 2023 12:05 AM",
-      body:"My 5st Post, Have A Awesome Day",
-      like: 30,
-      comment:10
-    },
-    {
-      username:"Reyana",
-      profilepicture:DPimg6,
-      img:img6,
-      datetime:"January 01, 2023 12:05 AM",
-      body:"My 6st Post, Have A Half Day",
-      like: 844,
-      comment:550
-    }
-  ]
+export const DisPlayPostData = [
+  {
+    username: "Максим",
+    profilepicture: DPimg1,
+    img: img1,
+    datetime: "01 апреля 2023 12:05",
+    body: "Мой первый пост. Хорошего дня!",
+    like: 44,
+    comment: 10
+  },
+  {
+    username: "Алексей",
+    profilepicture: DPimg2,
+    img: img2,
+    datetime: "01 мая 2023 12:05",
+    body: "Мой второй пост. Плохого дня!",
+    like: 84,
+    comment: 50
+  },
+  {
+    username: "Наталья",
+    profilepicture: DPimg3,
+    img: img3,
+    datetime: "01 июня 2023 12:05",
+    body: "Мой третий пост. Хорошего дня!",
+    like: 340,
+    comment: 76
+  },
+  {
+    username: "Лара",
+    profilepicture: DPimg4,
+    img: img4,
+    datetime: "01 июля 2023 12:05",
+    body: "Мой четвертый пост. Скучного дня! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veritatis numquam, ex explicabo tempore eum autem. Distinctio, odit fugiat rerum animi mollitia placeat? At ipsam debitis animi rem suscipit dicta dolor eveniet impedit minus. Quidem оdit autem quia facere consectetur vero placeat delectus enim aspernatur",
+    like: 44,
+    comment: 10
+  },
+  {
+    username: "Вячеслав",
+    profilepicture: DPimg5,
+    img: img5,
+    datetime: "01 февраля 2023 12:05",
+    body: "Мой пятый пост. Отличного дня!",
+    like: 30,
+    comment: 10
+  },
+  {
+    username: "Ульяна",
+    profilepicture: DPimg6,
+    img: img6,
+    datetime: "01 января 2023 12:05",
+    body: "Мой шестой пост. Половина дня!",
+    like: 844,
+    comment: 550
+  }
+];

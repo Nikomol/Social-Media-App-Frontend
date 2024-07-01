@@ -11,30 +11,30 @@ const FollowingMore = ({showMore,setShowMore}) => {
     const FollowingRemainingData=[
         {   
             id:1,
-            name:"Johnson",
+            name:"Евгений",
             username:"@John",
             img:Fimg1
         },
         {  
             id:2,
-            name:"Pink",
+            name:"Рита",
             username:"@Pinkee",
             img:Fimg2
         },
         {   id:3,
-            name:"Brock",
+            name:"Николай",
             username:"@BrandonBran",
             img:Fimg3
         },
         {   
             id:4,
-            name:"Chutki",
+            name:"Ирина",
             username:"@Chutki",
             img:Fimg4
         },
         {  
             id:5,
-            name:"jassica",
+            name:"Мария",
             username:"@JassicaMia",
             img:Fimg5
         }
@@ -52,7 +52,7 @@ const FollowingMore = ({showMore,setShowMore}) => {
       opened={showMore}
       onClose={()=>setShowMore(false)}
       transitionProps={{ transition: 'fade', duration: 200 }}
-      title="Who Is Following You"
+      title="Кто подписан на тебя"
       centered
       padding="20px"
       zIndex={2000}
@@ -68,7 +68,7 @@ const FollowingMore = ({showMore,setShowMore}) => {
                       </div>
                   </div>
         
-                  <button className='Rbtn' style={{background:"linear-gradient(107deg, rgb(255, 67, 5) 11.1%, rgb(245, 135, 0) 95.3%)"}}>Follow</button>
+                  <button className='Rbtn' style={{background:"linear-gradient(107deg, rgb(255, 67, 5) 11.1%, rgb(245, 135, 0) 95.3%)"}}>Подписаться</button>
             </div>
         
         ))}
